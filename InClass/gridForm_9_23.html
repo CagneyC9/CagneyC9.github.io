@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF8">
+  <title>Title</title>
+  <style>
+    form {
+      display: grid;
+      padding: 1em;
+      background: #f9f9f9;
+      border: 1px solid #c1c1c1;
+      margin: 2rem auto 0 auto;
+      max-width: 600px;
+      padding: 1em;
+    }
+    form input {
+      border: 1px solid #9c9c9c;
+    }
+    form button {
+      background: lightgrey;
+      padding: 0.7em;
+      width: 100%;
+      border: 0;
+    }
+    form button:hover {
+      background: green;
+    }
+    label {
+      padding: 0.5em 0.5em 0.5em 0;
+    }
+    input {
+      padding: 0.7em;
+      margin-bottom: 0.5rem;
+    }
+    input:focus {
+      outline: 3px solid red;
+    }
+    @media (min-width: 400px) {
+      form {
+        grid-template-columns: 200px 1fr;
+        grid-gap: 16px;
+      }
+      label {
+        text-align: right;
+        grid-column: 1 / 2;
+      }
+      input, button {
+        grid-column: 2 / 3;
+      }
+    }
+  </style>
+</head>
+<body>
+<form class="form1" action="">
+  <label for="firstName" class="first-name">First Name</label>
+  <input id="firstName" type="text" placeholder="Your First Name">
+  <label for="lastName" class="last-name">Last Name</label>
+  <input id="lastName" type="text" placeholder="Your Last Name">
+  <label for="job">Job</label>
+  <input id="job" type="text" maxlength="5">
+  <label for="age">Age</label>
+  <input id="age" type="text">
+  <label for="email">Email</label>
+  <input id="email" type="email">
+  <label for="radio">ContactYes</label>
+  <input type="radio" id="radio2" ContactYes>
+  <label for="radio">Radio</label>
+  <input type="radio"id="radio" ContactNo>
+  <label for="age2">Age</label>
+  <input id="age2" type="number" min="1" max="50">
+  <label for="preference"> Contact Preference</label>
+  <select id="preference" >
+    <option value="email"> Email me</option>
+    <option value="text"> Text me</option>
+    <option value="Yell"> Yell out the window</option>
+  </select>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="theComments"> You comments here </textarea>
+  <label for="check">Are u da imposter?</label>
+  <input type="checkbox"id="check" checked>
+  <label for="check2">Are u da imposter2? </label>
+  <input type="checkbox"id="check2" checked>
+
+<label for="myButton">Click me</label>
+  <button id="myButton">Click me</button>
+
+
+  <button>Submit</button>
+</form>
+</body></html>
